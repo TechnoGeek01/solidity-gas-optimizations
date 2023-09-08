@@ -32,6 +32,7 @@ Note:-
 
 11) Use assembly code to check for address(0). Use a helper assembly function to do it. You can use your custom error message.
 	0xd92e233d00000000000000000000000000000000000000000000000000000000 --> selector for `ZeroAddress()`.    
+
         error ZeroAddress();
 	function assembly_notZero(address toCheck) public pure returns(bool success) {
   	  assembly {
@@ -42,19 +43,19 @@ Note:-
       	  }
  	   }
    	 return true;
-       }
+        }
 
-12)  Remove unused variables.
+13)  Remove unused variables.
 
-13)  Do not pre-declare variable with default values. Don't explicitly initialize default variables. Egs: don't do uint x=0.
+14)  Do not pre-declare variable with default values. Don't explicitly initialize default variables. Egs: don't do uint x=0.
 
-14)  Use custom errors instead of error strings .Also Make sure the error size doesnot exceed 32 bytes.
+15)  Use custom errors instead of error strings .Also Make sure the error size doesnot exceed 32 bytes.
 
-15)  use !=0 instead of > 0 as validation for unsigned integers. This works as unsigned integers cannot take negative values.
+16)  use !=0 instead of > 0 as validation for unsigned integers. This works as unsigned integers cannot take negative values.
 
-16)  use external instead of public for functions that are not called internally
+17)  use external instead of public for functions that are not called internally
 
-17)  Caching the array length outside a loop saves reading it on each iteration, as long as the array’s length is not changed during the loop.
+18)  Caching the array length outside a loop saves reading it on each iteration, as long as the array’s length is not changed during the loop.
 
 19)  for multiple reads , cache storage data in functions to use memory instead of reading from storage multiple times.
 
