@@ -37,8 +37,7 @@ Note:-
   	  assembly {
    	     if iszero(toCheck) {
       	      let ptr := mload(0x40)
-      	      mstore(ptr, 0xd92e233d00000000000000000000000000000000000000000000000000000000) // selector for `ZeroAddress()`.                       
-                                                                                              
+      	      mstore(ptr, 0xd92e233d00000000000000000000000000000000000000000000000000000000)                                                                     
       	      revert(ptr, 0x4)
       	  }
  	   }
