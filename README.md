@@ -28,14 +28,14 @@ Note:-
 
 10) If one function calls another function and if same storage is read on both and with no changes to the storage in the transaction, then we can pass the storage from one function to another using as a calldata parameter and use it there.
 
-11) Use assembly code to check for address(0). Use a helper assembly function to do it.
+11) Use assembly code to check for address(0). Use a helper assembly function to do it. You can use your custom error message.
 	error ZeroAddress();
 	function assembly_notZero(address toCheck) public pure returns(bool success) {
   	  assembly {
    	     if iszero(toCheck) {
       	      let ptr := mload(0x40)
       	      mstore(ptr, 0xd92e233d00000000000000000000000000000000000000000000000000000000) // selector for `ZeroAddress()`.                       
-                                                                                              // You can use your custom error message.
+                                                                                              
       	      revert(ptr, 0x4)
       	  }
  	   }
