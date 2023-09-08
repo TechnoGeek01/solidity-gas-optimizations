@@ -10,7 +10,7 @@ Note:-
 
 1) Ternary operation is cheaper than if-else statement. But in some latest solidity versions this is optimized by default.
 
-2) Instead of multiplication by powers of 2 use bit shift left or bit shift right operators. Egs:- Shift left by 5 instead of multiplying by 32. Just make sure there is no possibility of overflow/underflow as bit shifting operators are not protected for overflow/underflow even if we use above 0.8.0 solidity versoin. bit shifting operators are not arithmetic operators so it is not protected for overflow/underflow.
+2) Instead of multiplication or division by powers of 2 use bit shift left or bit shift right operators. Egs:- Shift left by 5 instead of multiplying by 32. Just make sure there is no possibility of overflow/underflow as bit shifting operators are not protected for overflow/underflow even if we use above 0.8.0 solidity versoin. bit shifting operators are not arithmetic operators so it is not protected for overflow/underflow.
 
 3) Whenever possible, instead of (> or <) use (>= or =<). Example: instead of if(x>10) use if(x>=11)
 
