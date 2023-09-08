@@ -28,7 +28,7 @@ Note:-
 
 9) Use calldata instead of memory for function arguments that do not get mutated.
 
-10) If one function calls another function and if same storage is read on both and with no changes to the storage in the transaction, then we can pass the storage from one function to another using as a calldata parameter and use it there.
+10) If one function calls another function and if same storage is read on both and with no changes to the storage in the transaction, then we can pass the storage from one function to another using as a calldata parameter and use it there. It is useful cases where the called function is a internal or private function.
 
 11) Use assembly code to check for address(0). Use a helper assembly function to do it. You can use your custom error message.
 	0xd92e233d00000000000000000000000000000000000000000000000000000000 --> selector for `ZeroAddress()`.    
