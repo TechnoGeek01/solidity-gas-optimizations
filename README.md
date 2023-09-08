@@ -1,8 +1,12 @@
-# solidity-gas-optimizations
-
 Note:-
 * Use assembly only if you understand what you are doing as it can lead to vulnerabilities if implemented wrontly.
-* Never compromise on security for gas savings. Security should always be prioritized than gas optimizations
+* Never compromise on security for gas savings. Security should always be prioritized than gas optimizations.
+* I will be updating this file as and when I find any new gas saving techniques.
+* This list might contain some mistakes. I will update it if I find it. You can also do a pull request in case if you find something is wrong. I will approve and update it after analyzing the request.
+
+##############################################################################################################################
+
+# solidity-gas-optimizations
 
 1) Ternary operation is cheaper than if-else statement. But in some latest solidity versions this is optimized by default.
 
