@@ -1,6 +1,6 @@
 # solidity-gas-optimizations
 
-// Note:-
+#  // Note:-
 * Use assembly only if you understand what you are doing as it can lead to vulnerabilities if implemented wrontly.
 * Never compromise on security for gas savings. Security should always be prioritized than gas optimizations
 
