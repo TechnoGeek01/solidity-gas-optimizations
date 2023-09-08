@@ -3,6 +3,7 @@ Note:-
 * Never compromise on security for gas savings. Security should always be prioritized than gas optimizations.
 * I will be updating this file as and when I find any new gas saving techniques.
 * This list might contain some mistakes. I will update it if I find it. You can also do a pull request in case if you find something is wrong. I will approve and update it after analyzing the request.
+* Some code snippets might not be easily readable. I will update them.
 
 ##############################################################################################################################
 
@@ -29,7 +30,8 @@ Note:-
 10) If one function calls another function and if same storage is read on both and with no changes to the storage in the transaction, then we can pass the storage from one function to another using as a calldata parameter and use it there.
 
 11) Use assembly code to check for address(0). Use a helper assembly function to do it. You can use your custom error message.
-	error ZeroAddress();
+	
+        error ZeroAddress();
 	function assembly_notZero(address toCheck) public pure returns(bool success) {
   	  assembly {
    	     if iszero(toCheck) {
@@ -40,7 +42,7 @@ Note:-
       	  }
  	   }
    	 return true;
-   }
+       }
 
 12)  Remove unused variables.
 
