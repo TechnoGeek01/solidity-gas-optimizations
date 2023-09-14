@@ -8,8 +8,7 @@ contract test1 {
     bool i;
     uint j;
 
-    function costly() external {
-        bool k;
+    function costly(bool k) external {
         if (k == false) {
             j = 10;
         }
@@ -20,8 +19,7 @@ contract test2 {
     bool i;
     uint j;
 
-    function efficient() external {
-        bool k;
+    function efficient(bool k) external {
         if (!k) {
             j = 10;
         }
