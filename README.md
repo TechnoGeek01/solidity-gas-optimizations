@@ -10,7 +10,7 @@ Note:-
 
 # solidity-gas-optimizations
 
-1) Ternary operation is cheaper than if-else statement. This is optimized by default from solidity 0.8.13 and above versions.
+1) Ternary operation is cheaper than if-else statement for both runtime and deployment gas cost. Runtime gas is optimized by default for this from solidity 0.8.13 and above versions. Deployment gas savings are still applicable irrespective of the version currently. In future versions this might also be optimized by default.
 
 2) Instead of multiplication or division by powers of 2 use bit shift left or bit shift right operators. Egs:- Shift left by 5 instead of multiplying by 32. Just make sure there is no possibility of overflow/underflow as bit shifting operators are not protected for overflow/underflow even if we use above 0.8.0 solidity versoin. bit shifting operators are not arithmetic operators so it is not protected for overflow/underflow.
 
