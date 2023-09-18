@@ -20,7 +20,7 @@ Note:-
 
 5) ++i costs less gas than i++.
 
-6) i += j or i -= j Costs More Gas Than i = i + j or i = i - j  For State Variables.
+6) i = i + j or i = i - j costs less gas than i += j or i -= j for state variables. Note:- Doesnot work for struct and mappings.
 
 7) Use an unchecked block when operands can’t underflow/overflow.
 
