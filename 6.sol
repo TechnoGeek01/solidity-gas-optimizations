@@ -2,7 +2,7 @@
 pragma solidity 0.8.19;
 
 // Runtime Gas Optimization
-// i = i + j or i = i - j costs less gas than i += j or i -= j for state variables
+// i = i + j or i = i - j costs less gas than i += j or i -= j for state variables. Note:- Doesnot work for struct and mappings.
 
 contract test1 {
     uint i = 1;
