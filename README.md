@@ -269,7 +269,7 @@ It should be saved to an immutable variable, and the variable used instead. If t
 
 112) Use assembly to hash instead of Solidity
 
-113) Use assembly for math (add, sub, mul, div)
+113) Use assembly for math (add, sub, mul, div). But make sure there is no possibility of overflow/underflow.
 
 114) Don’t use SafeMath once the solidity version is 0.8.0 or greater. Version 0.8.0 introduces internal overflow checks, so using SafeMath is redundant and adds overhead.
 
