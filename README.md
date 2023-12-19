@@ -1,5 +1,5 @@
 Note:-
-* Use assembly only if you understand what you are doing as it can lead to vulnerabilities if implemented wrontly.
+* Use assembly only if you understand what you are doing as it can lead to vulnerabilities if implemented wrongly.
 * Never compromise on security for gas savings. Security should always be prioritized than gas optimizations.
 * I will be updating this file as and when I find any new gas saving techniques.
 * This list might contain some mistakes. I will update it if I find it. You can also do a pull request in case you find something is wrong. I will approve and update it after analyzing the request.
